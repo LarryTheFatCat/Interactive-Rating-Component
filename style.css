@@ -10,7 +10,7 @@ html {
     font-family: 'Poppins', sans-serif;
     display: grid;
     place-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .attribution { 
@@ -20,4 +20,3 @@ html {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-
