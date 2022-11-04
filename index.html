@@ -8,29 +8,36 @@
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
+  <div class="container">
+    <div class="card first">
+      <img src="./images/icon-star.svg" alt="icon-star svg" class="star">
+      <div class="text-content">
+        <h1 class="title-content">
+          How did we do?
+        </h1>
+        <p class="description-content">
+          Please let us know how we did with ur support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+      </div>
+      <div class="rating-component">
+        <button class="btn btn-one" value="1">1</button>
+        <button class="btn btn-one" value="2">2</button>
+        <button class="btn btn-one" value="3">3</button>
+        <button class="btn btn-one" value="4">4</button>
+        <button class="btn btn-one" value="5">5</button>
+        <button class="btn btn-submit" onclick="submitRating()" aria-required="true" aria-label="Submit" type="submit" required>Submit</button>
+      </div>
+    </div>
+    <div class="card second">
+      <img src="./images/illustration-thank-you.svg" alt="Thank you image">
+      <h3 class="Rating-text">You selected <span class="rating-number"><!--Rating here --></span> out of 5</h3>
+      <h2 class="thank-text">Thank you</h2>
+      <p class="thank-description">
+        We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+      </p>
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
