@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Overpass", Arial, Helvetica, sans-serif;
+    font-weight: 400, 700;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #141519;
+}
+
+body p{
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+}
+
+body h1 {
+    color: white;
+    font-family: inherit;
+}
+
+.card {
+    background-color: #1E252F;
+    width: 10cm;
+    height: 9cm;
+    text-align: left;
+    padding: 1cm;
+    border-radius: 20px;
+}
+
+.title-content {
+    margin-top: 1cm;
+}
+
+.description-content {
+    width: 9cm;
+}
+
+.rating-component {
+    margin-top: 0.5cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 8cm;
+}
+
+.rating-component button {
+    width: 1.5cm;
+    height: 1.5cm;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border-style: solid;
+    border: none;
+    background-color: hsl(213, 19%, 18%);
+    font-family: inherit;
+    color: hsl(214, 17%, 44%);
+}
+
+.rating-component button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.active {
+    background-color: orange;
+    color: white;
+}
+
+.rating-component button:focus {
+    color: white;
+    background-color: orange;
+}
+
+.btn-submit {
+    height: 1cm;
+    border-radius: 15px;
+    width: 8cm;
+    margin: 0 auto;
+    margin-top: 0.5cm;
+    outline: none;
+    color: white;
+    background-color: orange;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.star {
+    position: absolute;
+    border-width: 1cm;
+    background-color: hsl(213, 19%, 18%);
+    outline-width: 0.3cm;
+    outline-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    outline-style: solid;
+}
+
+.thankYou {
+    position: relative;
+    right: 0.3cm;
+}
+
+.second {
+    background-color: #1E252F;
+    width: 10cm;
+    height: 9cm;
+    text-align: left;
+    padding: 1cm;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.active {
+    display: block;
+}
+
+.second.hidden {
+    display: none;
+}
+
+.rating-text {
+    background-color:hsl(214, 17%, 44%);
+    width: 5cm;
+    border-radius: 20px;
+    color: orange;
+}
+
+.first.hidden {
+    display: none;
+}
+
+.thank-text {
+    color: white;
+    margin-top: 0.8cm;
+}
+
+.thank-description {
+    color: hsl(217, 12%, 63%);
+    margin-top: 0.5cm;
+}

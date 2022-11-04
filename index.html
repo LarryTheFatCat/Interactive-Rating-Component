@@ -21,17 +21,17 @@
         </p>
       </div>
       <div class="rating-component">
-        <button class="btn btn-one" value="1">1</button>
-        <button class="btn btn-one" value="2">2</button>
-        <button class="btn btn-one" value="3">3</button>
-        <button class="btn btn-one" value="4">4</button>
-        <button class="btn btn-one" value="5">5</button>
-        <button class="btn btn-submit" onclick="submitRating()" aria-required="true" aria-label="Submit" type="submit" required>Submit</button>
-      </div>
+          <button class="btn btn-one" id="btn-one" value="1" onclick="ratingComponent()">1</button>
+          <button class="btn btn-two" id="btn-two" value="2" onclick="ratingComponent()">2</button>
+          <button class="btn btn-three" id="btn-three" value="3" onclick="ratingComponent()">3</button>
+          <button class="btn btn-four" id="btn-four" value="4" onclick="ratingComponent()">4</button>
+          <button class="btn btn-five" id="btn-five" value="5" onclick="ratingComponent()">5</button>
+        </div>
+      <button disabled id="btnSubmit" class="btn-submit" aria-required="true" aria-label="Submit" type="submit" required>Submit</button>
     </div>
-    <div class="card second">
-      <img src="./images/illustration-thank-you.svg" alt="Thank you image">
-      <h3 class="Rating-text">You selected <span class="rating-number"><!--Rating here --></span> out of 5</h3>
+    <div class="card second" id="card-two">
+      <img src="./images/illustration-thank-you.svg" alt="Thank you image" class="thankYou">
+      <p class="rating-text">You selected <span class="rating-number"><!--Rating here --></span> out of 5</p>
       <h2 class="thank-text">Thank you</h2>
       <p class="thank-description">
         We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
